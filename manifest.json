@@ -1,0 +1,22 @@
+{
+  "name": "Samplebrowse",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "identity"
+  ]
+}
